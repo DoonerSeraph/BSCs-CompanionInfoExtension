@@ -1,0 +1,18 @@
+<GuiXml>
+	<Controls>
+		<Backdrop name="BDXP_TEMPLATE" centerColor="99000000" edgeColor="99FFFFFF" virtual="true">
+			<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)BDXP_TEMPLATE" />
+			<Dimensions x="250" y="20" />
+			<Edge edgeSize="1" />
+			<Controls>
+				<Label name="$(parent)ExpInfo" text="(0/0)" font="$(MEDIUM_FONT)|$(KB_12)|soft-shadow-thick" wrapMode="TRUNCATE" horizontalAlignment="CENTER" verticalAlignment="CENTER">
+					<AnchorFill/>
+				</Label>
+				<StatusBar name="$(parent)ExpBar" inherits="ZO_DefaultStatusBar">
+					<Dimensions x="248" y="18"/>
+					<Anchor point="TOPLEFT" relativeTo="$(parent)BDXP_TEMPLATE" relativePoint="TOPLEFT" offsetX="1" offsetY="1"/>
+				</StatusBar>
+			</Controls>
+		</Backdrop>
+	</Controls>
+</GuiXml>
